@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_test_exam"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_test_exam"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="20dp"
+            android:id="@+id/name_exam_testing"
+            android:textColor="@android:color/holo_red_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:id="@+id/time_count_down_test"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+
+            android:id="@+id/relative_test">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/custom_border"
+                android:layout_marginBottom="50dp"
+                >
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:id="@+id/txt_answer"
+                        android:layout_marginTop="10dp"/>
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_answer_test_exam"
+                        android:layout_below="@+id/txt_answer"
+                        android:layout_marginBottom="50dp"
+                        android:divider="#00000000"
+                        android:dividerHeight="0dp">
+
+                    </ListView>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_next_test_exam"
+                        android:layout_alignParentBottom="true"
+                        android:text="next"
+                        />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_border_normal"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="test"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/question_title_test_exam"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_questions_test_exam"
+
+                        android:visibility="gone"/>
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#00000000"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/list_answer_question_test_exam">
+
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:numColumns="10"
+                android:horizontalSpacing="5dp"
+
+                android:verticalSpacing="5dp"
+                android:id="@+id/list_number_question_test_exam"
+                android:layout_alignParentBottom="true"
+                >
+
+            </GridView>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:background="@drawable/custom_button"
+            android:id="@+id/btnFinish_test"
+            android:layout_alignParentBottom="true"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:background="@drawable/custom_button"
+            android:id="@+id/btnStop_test"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

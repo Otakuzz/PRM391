@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRegisterTitle"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_purple" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="42dp"
+            android:id="@+id/tvUsername"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:id="@+id/edtUsername_register"
+            android:layout_alignBaseline="@+id/tvUsername"
+            android:layout_alignBottom="@+id/tvUsername"
+            android:layout_toRightOf="@+id/tvUsername"
+            android:layout_toEndOf="@+id/tvUsername"
+            android:hint="input your id" />
+
+        <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/tvPassword"
+            android:textSize="18sp"
+            android:layout_below="@+id/edtUsername_register"
+            android:layout_toLeftOf="@+id/edtPassword_register"
+            android:layout_toStartOf="@+id/edtUsername_register" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edtPassword_register"
+            android:layout_alignBaseline="@+id/tvPassword"
+            android:layout_alignBottom="@+id/tvPassword"
+            android:layout_alignLeft="@+id/edtUsername_register"
+            android:layout_alignStart="@+id/edtUsername_register"
+            android:inputType="textPassword"
+            android:hint="input your password" />
+
+        <TextView
+            android:text="Re-Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPassword_register"
+            android:layout_alignLeft="@+id/tvUsername"
+            android:layout_alignStart="@+id/tvUsername"
+            android:layout_marginTop="23dp"
+            android:id="@+id/tvRePass"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edtRePass_register"
+            android:inputType="textPassword"
+            android:hint="re-input password"
+            android:layout_alignBaseline="@+id/tvRePass"
+            android:layout_alignBottom="@+id/tvRePass"
+            android:layout_alignLeft="@+id/edtPassword_register"
+            android:layout_alignStart="@+id/edtPassword_register" />
+
+        <TextView
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtRePass_register"
+            android:layout_alignLeft="@+id/tvUsername"
+            android:layout_alignStart="@+id/tvUsername"
+            android:layout_marginTop="23dp"
+            android:id="@+id/tvEmail"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEmail_register"
+            android:layout_alignLeft="@+id/edtEmail_register"
+            android:layout_alignStart="@+id/edtEmail_register"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="57dp"
+            android:id="@+id/btnSubmit_register" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnSubmit_register"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:id="@+id/btnCancel_register" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edtEmail_register"
+            android:inputType="textEmailAddress"
+            android:hint="input your email"
+            android:layout_alignBaseline="@+id/tvEmail"
+            android:layout_alignBottom="@+id/tvEmail"
+            android:layout_alignLeft="@+id/edtRePass_register"
+            android:layout_alignStart="@+id/edtRePass_register" />
+
+    </RelativeLayout>
+</LinearLayout>
